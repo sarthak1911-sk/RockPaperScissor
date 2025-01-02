@@ -1,0 +1,114 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        body {
+            background-color:cadetblue;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            background-color: #081b31;
+            color: beige;
+            height: 5rem;
+            line-height: 5rem; 
+            margin-bottom: 2rem;
+        }
+        .choice {
+            height: 150px;
+            width: 150px;
+            border-radius: 20%;
+            border: 2px solid black;
+        }
+        img {
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid black;
+        }
+        .choices {
+            display: flex;
+            margin-top: 50px;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .choice:hover {
+            background-color: #081b31;
+            cursor: pointer;
+        }
+        .scoreboard {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: 2.5rem;
+            gap: 3rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+        #user-score, #comp-score {
+            font-size: 4rem;
+            margin-top: 3rem;
+        }
+        .msg-container {
+            margin-top: 3rem;
+        }
+        #msg {
+            font-size: 2rem;
+            background-color: blueviolet;
+            display: inline;
+            border-radius: 20%;
+            padding: 1rem;
+            border: 3px solid black;
+            color:white;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                height: 4rem;
+                line-height: 4rem;
+            }
+            .choice, img {
+                height: 100px;
+                width: 100px;
+            }
+            .choices {
+                gap: 1rem;
+            }
+            .scoreboard {
+                font-size: 2rem;
+                gap: 2rem;
+            }
+            #user-score, #comp-score {
+                font-size: 3rem;
+            }
+            #msg {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                height: 3rem;
+                line-height: 3rem;
+            }
+            .choice, img {
+                height: 80px;
+                width: 80px;
+            }
+            .scoreboard {
+                font-size: 1.5rem;
+                gap: 1rem;
+            }
+            #user-score, #comp-score {
+                font-size: 2.5rem;
+            }
+            #msg {
+                font-size: 1.2rem;
+            }
+        }
+    
